@@ -8,7 +8,7 @@
 # my blog: http://korznikov.com
 # my challenges: http://sudo.co.il
 
-import termios, fcntl, sys, os, re
+import termios, fcntl, sys, os
 
 class z:
    working = True

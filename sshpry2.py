@@ -19,7 +19,7 @@
 
 from subprocess import Popen, PIPE
 from threading import Thread
-import termios, fcntl, sys, os, re, json, zlib
+import termios, fcntl, sys, os, re, json
 import time
 
 # Globals
