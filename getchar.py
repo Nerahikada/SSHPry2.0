@@ -29,7 +29,7 @@ def GetKeystrokes(b):
       while z.working:
          try:
             c = sys.stdin.read(1)
-            print repr(c)
+            print(repr(c))
          except IOError: pass
    finally:
       termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
